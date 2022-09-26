@@ -818,5 +818,13 @@ Resources:
         Value: venturaproddb
     DeletionPolicy: Snapshot
 
+    s3Bucket:
+      Type: AWS::S3::Bucket
+      Properties: 
+        BucketName: etienne-prob-bucket 
+        Tags:
+          - Key: Name
+            Value: prod-Env-Logs
+
 
 Outputs: {}
