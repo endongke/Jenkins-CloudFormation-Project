@@ -826,6 +826,12 @@ Resources:
         - Key: Name
           Value: prod-Env-Logs
 
-
+  s3Bucket:
+      Type: AWS::S3::Bucket
+      Properties: 
+        BucketName: etienne-prod-bucket-2
+        Tags:
+          - Key: Name
+            Value: prod-Env-Logs
 
 Outputs: {}
